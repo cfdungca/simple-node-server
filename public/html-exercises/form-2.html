@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <h2>Order Form</h2>
+        
+        <form><!--Insert form elements--> </form>
+        
+        <fieldset>
+            <legend>Customer Details</legend><br/>
+            <label> Customer Name: <input type="text" name="username"></label> <br/>
+            <label> Mobile Number: <input type="text" name="text" required></label> <br/>
+            <label> E-mail Address: <input type="text" name="text" required></label> <br/><br/>
+        </fieldset>
+            
+        <fieldset>
+            <legend>Pizza Options</legend>
+            <label><br/>
+            Flavor:
+            <select name="flavor">
+            <option value="dc">Double Cheese</option>
+            <option value="h">Hawaian</option>
+            <option value="m">Margherita</option>
+            <option value="p">Pepperoni</option>
+            <option value="cl">Classic</option>
+            <option value="vg">Vegetarian</option>
+            <option value="pcs">Philly Cheese Steak</option>
+            </select><br/><br/>
+            
+            Size:<br/>
+            <label><input type="radio" name="size" value="small"> Small </label>
+            <label><input type="radio" name="size" value="medium"> Medium </label>
+            <label><input type="radio" name="size" value="large"> Large </label><br/><br/>
+            
+            Extra Toppings:<br/>
+            <label><input type="checkbox" name="extra topping" value="bacon" > Bacon </label>
+            <label><input type="checkbox" name="extra topping" value="cheese" > Cheese </label>
+            <label><input type="checkbox" name="extra topping" value="onion" > Onion </label>
+            <label><input type="checkbox" name="extra topping" value="mushroom" > Mushroom </label><br/><br/>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Delivery Details</legend><br/>
+            <label> Delivery Date: <input type="date" name="ddate"></label><br/><br/>
+            
+            <label> Preferred Delivery Time: <input type="time" name="dtime"></label><br/><br/>
+            
+            <label> Delivery Address: <br><textarea rows="7" cols="50"></textarea></label><br/><br/>
+        </fieldset><br/>
+        
+        <button type="reset" value="reset">Reset</button>
+        <button type="submit" value="submit">Submit Order</button>
+    </body>
+</html>
