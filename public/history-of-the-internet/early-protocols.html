@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>History of the Internet</title>
+        <style>
+            li span { position: relative; left: -40px; }
+        </style>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="project-css/index.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class="whole">
+        <div class="header">
+            <div class="logo">
+                <img src="images/web.png" width="60px" height="60px"/>
+            </div>
+            <div class="text">
+                <p style="font-family:roboto, sans-serif; line-height:0px; padding: 0x; margin:0px; margin-left:52px; color:#00CC99; font-size:10px">HISTORY OF THE</p>
+                <p style="font-family:Lobster, cursive; line-height:0px; padding: 0x; margin:0px; margin-top:11px; color:#A9A9A9; font-size:45px">Internet</p>
+            </div>
+        </div>
+        
+        <div class="nav">
+            <a href="index.html">Home</a>
+    	    <a href="world-war-2.html">World War II</a>
+    		<a href="early-protocols.html">Early Protocols</a>
+    		<a href="the-first-internet.html">The First Internet</a>
+    		<a href="early-world-wide-web.html">Early World Wide Web</a>
+    	</div>
+    	
+    	<div class="body-protocol">
+    	    <div class="body-left">
+    	        <h2 style="line-height:30px">Protocols</h2>
+    	        <p style="font-family:arial; font-size:15px; text-indent:0px; line-height:20px">In computer science, it is a set of rules or procedures for transmitting data between electronic devices, such as computers. In order for computers to exchange information, 
+    	        there must be a preexisting agreement as to how the information will be structured and how each side will send and receive it.  The most important sets of Internet protocols are TCP/IP, HTTP, and FTP.</p>
+    	        <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">But before we dig into protocols.  Let us first dicuss packets.  <i>Packets</i> are broken down pieces of a file for transfer or transmission from one host to another.  There are 
+    	        2 ways on how packets are being transfered: <i>packet switching</i> and <i>circuit switching</i>.</p><br/><hr><br/>
+    	        
+    	        <div class="packet">
+    	            <h3 style="line-height:30px">Packet Switching vs Circuit Switching</h3>
+    	            <ol id="packet-list" style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">
+    	                <li><span><u>Packet Switching</u>
+    	                <div class="tae">
+    	                    <p style="font-family:arial; font-size:15px; text-indent:0px; line-height:20px"> - is when packets pass through different routes where it is harder for a hacker to trace all the broken pieces of files.  This need not the channel to be fully established 
+    	                    just for the connection to be active.  Some examples of it are video-streaming, Skype chat and online video games.  The negative side of this is it could cause time-delay for the whole file to be accepted by the other host.  
+    	                    Just like also in Skype calls, it is not appealling that the video is a little bit late than the audio.</p>
+    	                </div</span></li>
+    	                <br/><li><span><u>Circuit Switching</u>
+    	                <div class="poop">
+    	                    <p style="font-family:arial; font-size:15px; text-indent:0px; line-height:20px"> - is when all packets of a file pass through the same route and reaches the destination faster.  The packets here are 
+    	                    easy to reassemble.  Also, this is quite dangerous since a hacker may be able to see the whole file since all packets pass through the same route.  
+    	                    Examples for circuit switching are torrent downloads and sms.  Since, unlike in packet switching, this needs a the channel to be established for the connection to be active.</p>
+    	                </div></span></li>
+    	            </ol>
+    	        </div><br/><hr><br/>
+    	        <h2 style="line-height:30px">TCP/IP</h2>
+    	        <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px"><i>Transmission Control Protocol/Internet Protocol</i> is the basic communication language or protocol of the Internet. It can also be used as a communications protocol in a private network (either an intranet or an extranet).  (Searchnetworking.techtarget.com)</p>
+    	        <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">The higher layer, <i>TCP</i>, manages the assembling of a message or file into smaller packets that are transmitted over the Internet and received by a TCP layer that reassembles the packets into the original message.</p>
+    	        <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">The lower layer, <i>IP</i>, handles the address part of each packet so that it gets to the right destination. Each gateway computer on the network checks this address to see where to forward the message. Even though some packets from the same message are routed differently than others, 
+    	            they'll be reassembled at the destination.</p>
+    	        <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">TCP/IP protocols map to a four-layer conceptual model known as the DARPA model, named after the U.S. government agency that initially developed TCP/IP. The four layers of the DARPA model are: Application, Transport, Internet, and Network Interface. 
+    	            Each layer in the DARPA model corresponds to one or more layers of the seven-layer Open Systems Interconnection (OSI) model.  (Technet.microsoft.com)</p>
+                <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">The following figure shows the TCP/IP protocol architecture.</p>
+                <br/><center><img src="images/tcp-ip-archi.gif"/></center><br/><br/><hr><br/>
+                
+                <div class="packet">
+                    <h3 style="line-height:30px">DNS</h3>
+                    <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px"><i>Domain Name Servers</i> are the Internet's equivalent of a phone book. They maintain a directory of domain names and translate them to Internet Protocol (IP) addresses.  So instead of seeing numbers 
+                        such as "129.789.89323:7893", you will be able to see "mywebsite.com" in the URL.</p>
+                </div><br/><hr><br/>
+                <h2 style="line-height:30px">Hub, Switch, and Router</h2>
+                <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px"><i>Hub</i> is a common connection point for devices in a network. Hubs are commonly used to connect segments of a LAN. It contains multiple ports. When a packet arrives at one port, it is copied to the other ports so that all segments of the LAN can see all packets.</p>
+                <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px"><i>Switch</i> is a device that filters and forwards packets between LAN segments. Switches operate at the data link layer (layer 2) and sometimes the network layer (layer 3) of the OSI Reference Model and therefore support any packet protocol. LANs that use switches to 
+                    join segments are called switched LANs or, in the case of Ethernet networks, switched Ethernet LANs.</p>
+                <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px"><i>Router</i> is a device that forwards data packets along networks. A router is connected to at least two networks, commonly two LANs or WANs or a LAN and its ISP.s network. These are located at gateways, the places where two or more networks connect. 
+                    These use headers and forwarding tables to determine the best path for forwarding the packets, and they use protocols such as ICMP to communicate with each other and configure the best route between any two hosts.</p>
+                    <p style="font-family:arial; font-size:15px; text-indent:50px; line-height:20px">(Webopedia.com)</p>
+    	    </div>
+    	    <div class="body-right">
+    	        <p style="font-family: 'Francois One', sans-serif; color:#fa8c80; font-size:20px" align="center">Want To Make Your Own<br/> QR Code?</p>
+    	        <center><a href="http://goqr.me/#t=url"><img src="images/qrcode.png" width="100px" height="100px"/></a><br/><br/><hr>
+    	        <p style="font-family: 'Francois One', sans-serif; color:#fa8c80; font-size:20px" align="center">Stay Connected With<br/> The Author</p>
+    	        <center><a href="https://twitter.com/bubuchachaa"><img src="images/twitter.jpg" width="60px" height="60px"/></a> <a href="https://www.facebook.com/chuchachaaa"><img src="images/facebook2.jpg" width="60px" height="60px"/></a> <a href="https://instagram.com/chuchachaaa/"><img src="images/instagram.png" width="60px" height="60px"/></a></center>
+    	    </div>
+    	</div>
+	</div>
+	
+	<div class="card-panel light-green ">
+	    <center><font style="font-family:arial; color:#909090; font-size:12px; line-height:8px"><a href="index.html" style="font-family:arial; font-size:12px; line-height:8px; color:#909090">Home</a> | <a href="world-war-2.html" style="font-family:arial; font-size:12px; line-height:8px; color:#909090">World War II</a> | <a href="early-protocols.html" style="font-family:arial; font-size:12px; line-height:8px; color:#909090">Early Protocols</a> | <a href="the-first-internet.html" style="font-family:arial; font-size:12px; line-height:8px; color:#909090">The First Internet</a> | <a href="early-world-wide-web.html" style="font-family:arial; font-size:12px; line-height:8px; color:#909090">Early World Wide Web</a></font></center>
+	    <center><p style="font-family:arial; font-size:12px; line-height:8px; color:#909090">© Copyright 2015 All Rights Reserved. CMSC 2</p></center>
+	    <center><font style="font-family:arial; color:#909090; font-size:12px; line-height:8px">Designed and Developed by </font><a href="https://www.facebook.com/chuchachaaa" style="font-family:arial; font-size:12px; line-height:8px; color:#909090">bubuchachaa</a><font style="font-family:arial; color:#909090; font-size:12px; line-height:8px"> ¯\_(ツ)_/¯</font></center>
+	</div>
+    </body>
+</html>
